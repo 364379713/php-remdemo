@@ -1,0 +1,198 @@
+@charset "utf-8";
+html {
+	font-size: 625%;
+}
+body,h1,h2,h3,h4,ul,p,div,form,fieldset,figure{
+	margin:0;
+	padding:0;
+}
+body {
+	background-color: #f5f5f5;
+	font-size: 0.16rem;
+}
+ul,ol{
+	list-style: outside none none;
+}
+a{
+	text-decoration:none;
+}
+.none{
+	display: none;
+}
+img{
+	display: block;
+	max-width: 100%;
+}
+div,figure,figcaption{
+	box-sizing: border-box;
+}
+.clear:after{
+	content:'.';
+	display: block;
+	clear:both;
+	height:0;
+	visibility:hidden;
+}
+#header{
+	width: 100%;
+	height:.45rem;
+	background: #333;
+	font-size: 0.16rem;
+	position: fixed;
+	top:0;
+	z-index:9999;
+}
+#header .link{
+	height: .45rem;
+	line-height: .45rem;
+	color: #eee;
+}
+#header .link li{
+	width:25%;
+	text-align: center;
+	float:left;
+}
+#header .link a{
+	color: #eee;
+	display: block;
+}
+#header .link a:hover,
+#header .active a {
+	background-color:#000;
+}
+#adver{
+	max-width: 6.4rem;
+	margin: 0 auto;
+	padding: 0.45rem 0 0 0;
+}
+#footer{
+	max-width:6.4rem;
+	background-color:#222;
+	color:#777;
+	margin:0 auto;
+	text-align: center;
+	padding: .1rem 0;
+	font-size: .16rem;
+}
+#footer .top{
+	padding:0 0 .05rem 0;
+}
+#search{
+	max-width: 6.4rem;
+	height: .33rem;
+	margin:0 auto;
+	background-color: #ddd;
+	padding:.03rem 0 0 0;
+	position: relative;
+}
+#search .search{
+	width:95%;
+	height:.27rem;
+	border-radius:.04rem;
+	border:none;
+	outline:none;
+	background-color: #fff;
+	display: block;
+	margin:0 auto;
+	font-size: .14rem;
+	padding: 0 .05rem;
+}
+#search .button{
+	display: block;
+	background-color: #eee;
+	outline: none;
+	cursor:pointer;
+	color:#666;
+	width:.5rem;
+	height:.27rem;
+	border: none;
+	border-top-right-radius: .04rem;
+	border-bottom-right-radius: .04rem;
+	font-size: .14rem;
+	position: absolute;
+	top:.03rem;
+	right:1%;
+}
+#tour{
+	max-width:6.4rem;
+	margin:.1rem auto 0 auto;
+}
+#tour h2{
+	text-align:center;
+	color: #666;
+	font-size: .26rem;
+}
+#tour h3{
+	text-align:center;
+	font-weight:normal;
+	color: #666;
+	font-size: .16rem;
+}
+#tour figure{
+	width:50%;
+	float: left;
+	background-color: #eee;
+	padding:0 0 .05rem 0;
+	font-size: .16rem;
+}
+#tour figure img{
+	padding: .02rem;
+	vertical-align: middle;
+	border-radius: .04rem;
+}
+#tour figcaption{
+	color: #666;
+	font-size: .16rem;
+	padding:.02rem .05rem;
+}
+#tour h4{
+	font-weight:normal;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+#tour p{
+	white-space:nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+#tour .info{
+	padding:.1rem 0 0 0;
+	font-size: .16rem;
+}
+#tour .price{
+	color:#f60;
+}
+#tour .price strong{
+	letter-spacing: .01rem;
+}
+#tour .sat{
+	position: relative;
+	float:right;
+	right: .05rem;
+	font-style: normal;
+}
+/*媒体查询，大于480px小于640px*/
+@media (min-width:480px) and (max-width:640px){
+	#tour h2{
+		font-size: .26rem;
+	}
+	#tour h3, #footer,#tour figure, #tour .info{
+		font-size: .16rem;
+	}
+}
+/*媒体查询，小于480px*/
+@media (max-width:480px){
+	#tour h2{
+		font-size:.20rem;
+	}
+	#tour h3{
+		font-size: .14rem;
+	}
+	#tour figcaption, #tour .info{
+		font-size: .11rem;
+	}
+	#footer{
+		font-size: .12rem;
+	}
+}
